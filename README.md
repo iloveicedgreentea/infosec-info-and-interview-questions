@@ -2,6 +2,8 @@
 
 ## About
 
+this is a splelling error
+
 This is a collection of Infosec questions and information that helped me. This can also be used to refresh your knowledge or learn new concepts at your current position.
 
 Why make this?
