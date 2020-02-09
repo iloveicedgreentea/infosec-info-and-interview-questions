@@ -3,10 +3,14 @@
 
 ## PR Type
 - [ ] This is a correction/bugfix
-- [ ] This is a new addition - new info, new topic, etc
+- [ ] This is an addition - new info, new topic, etc
 
 ## What is your PR for? Please describe in two sentences or less.
 This PR adds a section on X with topics on X, Y, and Z.
+
+__or__
+
+This PR fixes section X because XYZ is incorrect. Correct answer should be...
 
 ## License Check
 - [ ] I submit this PR under the terms of the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
