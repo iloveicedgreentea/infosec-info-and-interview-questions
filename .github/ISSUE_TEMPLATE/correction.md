@@ -1,7 +1,7 @@
 ---
 name: Correction
 about: Correct wrong info, spelling mistakes, improve current info
-title: ''
+title: '[Bug]'
 labels: bug
 assignees: iloveicedgreentea
 
