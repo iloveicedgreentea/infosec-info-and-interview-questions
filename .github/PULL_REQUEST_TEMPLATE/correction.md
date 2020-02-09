@@ -1,20 +1,13 @@
----
-name: Correction
-about: Correct wrong info, spelling mistakes, improve current info
-title: ''
-labels: bug
-assignees: iloveicedgreentea
 
----
-
-**Describe the issue**
+## Describe the issue
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+## To Reproduce
 Please include a link to the issue
 
-**Screenshots**
+## Screenshots
 If applicable, add screenshots to help explain your problem.
 
-**Additional context**
+## Additional context
 Add any other context about the problem here.
+
