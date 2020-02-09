@@ -11,5 +11,5 @@ This PR adds a section on X with topics on X, Y, and Z.
 ## License Check
 - [ ] I submit this PR under the terms of the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-## Sources Check**
+## Sources Check
 - [ ] I added any applicable sources, to the best of my knowledge, to the `sources` section of the README.
