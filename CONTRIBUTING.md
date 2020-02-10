@@ -1,6 +1,20 @@
 # Contributing
 
-This was made to contribute to the infosec community. 
+This was made to contribute to the infosec community. Thank you in advance for contributing.
 
-1) If this helped you, please feel free to share this (but please [read the license first](license.md)).
+## Guidelines
+
+### General
+
+1) If this helped you, please feel free to share this (but please [read the license first](license.md)). This is itself a contribution.
 2) If you have additional content, improvements, etc, please open a PR and tag me.
+
+### Additions
+
+If you have new content to add, open an issue with the `Feature request` template or open a PR.
+
+Sections should not be microscopic. That is, don't create a section for a specific topic if it relates to an existing one. Only create a section if it is a new genre. For example, attacks on AD should go in `Info/Active_directory.md`, but "Blue Team concepts" might need its own section.
+
+### Corrections
+
+If there is a mistake, typo, etc, open an issue with the `Correction` template or open a PR. No correction is too small, besides white space. Please.

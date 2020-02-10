@@ -19,8 +19,10 @@ jobs:
   check_links:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.0.0
-    - uses: docker://dkhamsing/awesome_bot:latest
+    - name: checkout
+      uses: actions/checkout@v2.0.0
+    - name: check_links
+      uses: docker://dkhamsing/awesome_bot:latest
       with:
-        args: --allow 429 --allow-timeout -t 10 --skip-save-results --allow-dupe --allow-redirect `find . -name "*.md"`
+        args: --allow 429 --allow-timeout -t 10 --skip-save-results --allow-dupe --allow-redirect README.md
     
