@@ -11,25 +11,42 @@ These are not in any particular order
 * ECCDHE - Like DHE, but instead of using extremly complicated modulus math, it uses extremely complicated eliptic curve cryptography. Very cool, and very legal ([Until the FBI has its way](https://en.wikipedia.org/wiki/FBI%E2%80%93Apple_encryption_dispute)).
 * EdDSA - Edwards-curve Digital Signature Algorithm. This is an ECC signature algorithm using Curve25519. Curve25519 is a popular alternative to NIST's P-XXX curves which are not backdoored, [according to the people who have the technical means to backdoor it](https://en.wikipedia.org/wiki/Dual_EC_DRBG).
 * MITM - Man in the middle. This is a common attack where someone intercepts your communication and eavesdrops or changes it. Instead of A<->B, you have A<->C<->B and neither party will know. Safeguards include TLS, PKI, anything that both encrypts AND authenticates the communication. 
-
+* KMS - Key Management Service - A hosted key management system generally in the cloud. They generate and store keys for you more securely than we ever could.ugh 
 
 
 ## Concepts you should know
 
-* Asymmetric keys - Think RSA. Public and private key pair. Public used to encrypt/verify signature. Private used to sign/decrypt. Public can be shared without limits. Signature is proof of ownership.
-* Symmetric Keys - One key, so cannot be shared publicly. Used in standards like AES. Much faster than Asymmetric keys for encryption. 
-* Certificate - This is a public key container that is signed by an entity like a Root CA. Has info like public key, host name, etc
-* Perfect Forward Secrecy - 
+### Asymmetric keys 
 
-Envelope Encryption
+Think RSA. Public and private key pair. Public used to encrypt/verify signature. Private used to sign/decrypt. Public can be shared without limits. Signature is proof of ownership.
 
-* Protecting data keys When you encrypt a data key, you don't have to worry about storing the encrypted data key, because the data key is inherently protected by encryption. You can safely store the encrypted data key alongside the encrypted data.  
-* Encrypting the same data under multiple master keys Encryption operations can be time consuming, particularly when the data being encrypted are large objects. Instead of re-encrypting raw data multiple times with different keys, you can re-encrypt only the data keys that protect the raw data.  
-* Combining the strengths of multiple algorithms In general, symmetric key algorithms are faster and produce smaller ciphertexts than public key algorithms. But public key algorithms provide inherent separation of roles and easier key management. Envelope encryption lets you combine the strengths of each strategy. 
+### Symmetric Keys
+One key, so cannot be shared publicly. Used in standards like AES. Much faster than Asymmetric keys for encryption. 
 
+### Certificate 
+This is a public key container that is signed by an entity like a Root CA. Has info like public key, host name, etc.
 
+### Perfect Forward Secrecy 
+If you use DH and generate a new session key every time, you cannot crack one key to decrypt all previous or future sessions. 
 
+### Envelope Encryption
+The big worry with encryption is exposing or losing keys. Why not let the cloud provider worry about it?
 
+It starts with a single master key - `Customer Master Key` as it is referred to in most CSPs. This CMK can never be exposed by you - you will never see the plaintext key.
+
+Using their API, or on your own, you can generate a `data key`. You can/should generate many data keys for encrypting files to minimize your attack surface. If using a KMS, you will get a plaintext and ciphertext data key. You can encrypt your data as needed, then discard the plaintext key (`shred --zero --remove=wipesync --iterations=100`). Store the ciphertext data and key somewhere. When you need the data, just decrypt the key and then decrypt the data with your data key. 
+
+You never need to store the plaintext key long term. This is amazing, seriously.
+
+Why use this?
+
+* You don't need to store the data keys in plaintext
+
+* Generate many data keys to encrypt files instead of relying on one key
+
+* Instead of rotating your data keys which would require reencryption of a ton of data, you can rotate the master key instead
+
+* When in the cloud, you also have IAM and auditing. You can allow only specific users to decrypt key X, Y, or Z and also audit their usage.
 
 
 ## Diffie-Hellman Authentication
