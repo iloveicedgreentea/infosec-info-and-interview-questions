@@ -76,7 +76,7 @@ Putting all the above in context, we can finally start to understand TLS. Here i
     * Client Hello - Client sends TLS version, cipher suites supported, and a` client random`
     * Server Hello - Server send TLS certificate, the cipher suite and tls version to use, and a `server random`
 * Authentication
-    * The server encrypts the client random, the server random, and the DH parameters. 
+    * The server signs the client random, the server random, and the DH parameters, sends to client. 
     * Client decrypts said information and sends its DH parameters to server
 * Secret key generation
     * Premaster secret is generated from the DH parameters thanks to DH, without exchanging secrets.
