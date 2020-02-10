@@ -11,6 +11,9 @@ Why make this?
 
 **WIP - I have >10 pages of notes and I am currently transcribing it into markdown. Please bear with me.**
 
+This is available in web form here for now. I will make this a dedicated site later on.
+https://iloveicedgreentea.github.io/infosec-info-and-interview-questions/
+
 This is not yet comprehensive so feel free to contribute anything related to infosec. This includes good devops practices such as securing IAM, CD pipelines, etc. Good devops *is* security. 
 
 ## Features
@@ -19,6 +22,7 @@ These are WIP. Some are not up yet, but I will add them Soon®
 * PR and Issue Templates 
 * Link checks via awesome_bot
 
+TODO: Serve from /docs, add to domain
 TODO: GH Actions for style guide, spell check
 
 ## Contributing
@@ -35,27 +39,27 @@ Interview tips, news sources, how to get info, general concepts, etc. Any misc i
 ### OSI
 Basics of the OSI layers with examples
 
-[OSI](Info/OSI.md)
+[OSI](Info/osi.md)
 
 ### OS
 Operating system facts and basics
 
-[OS](Info/OS.md)
+[OS](Info/os.md)
 
 ### Containers
 Containers facts and basics
 
-[Containers](Info/Containers.md)
+[Containers](Info/containers.md)
 
 ### Shell
 Bash, shell scripting, simple shell tools
 
-[Shell](Info/Shell.md)
+[Shell](Info/shell.md)
 
 ### Networking
 Networking basics, ports, network security, http, and anything else relating to networks
 
-[Networking](Info/Networking.md)
+[Networking](Info/networking.md)
 
 ### IAM
 IAM and related concepts - SSO
@@ -75,17 +79,17 @@ All SIEM related content - Splunk, ES
 ### Cryptography
 AES, SHA, ECDHE, Cryptanalysis, TLS, HTTP, all the acronyms you need to know
 
-[Cryptography](Info/Cryptography.md)
+[Cryptography](Info/cryptography.md)
 
 ### Generic Attacks
 Buffer Overflows, MITM, the basics of attacks you should know. Anything specific will be in another section e.g AD attacks will be in the Active Directory page.
 
-[Attacks](Info/Attacks.md)
+[Attacks](Info/attacks.md)
 
 ### Active Directory
 AD basics, red team concepts for AD
 
-[Active Directory](Info/Active_directory.md)
+[Active Directory](Info/active_directory.md)
 
 ## License
 
