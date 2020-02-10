@@ -25,7 +25,7 @@ These are generally geared towards remote interviews.
     * Look for red flags. Are there reviews mentioning poor processes? Bad interview questions? [Brain puzzles](https://www.theatlantic.com/business/archive/2013/06/google-finally-admits-that-its-infamous-brainteasers-were-completely-useless-for-hiring/277053/)? 
     * In general, have a list of questions to ask. Even if you know the answers, asking questions will show them you are interested. Companies would generally rather hire an enthusiastic Junior than a Senior who isn't interested in the company. You can teach skills. You can't really teach enthusiasm.
 
-* Don't just give anwers; have conversations. 
+* Don't just give answers; have conversations. 
     * Give context to your answers - why do you think X and not Y? How did you arrive at your opinion?
     * Wrong answers are okay if you frame your opinion
     * Not knowing an answer is fine if you can take an educated guess or talk though it. It looks really bad to simply say you don't know and make no attempt to figure it out.
