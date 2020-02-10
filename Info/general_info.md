@@ -25,10 +25,17 @@ These are generally geared towards remote interviews.
     * Look for red flags. Are there reviews mentioning poor processes? Bad interview questions? [Brain puzzles](https://www.theatlantic.com/business/archive/2013/06/google-finally-admits-that-its-infamous-brainteasers-were-completely-useless-for-hiring/277053/)? 
     * In general, have a list of questions to ask. Even if you know the answers, asking questions will show them you are interested. Companies would generally rather hire an enthusiastic Junior than a Senior who isn't interested in the company. You can teach skills. You can't really teach enthusiasm.
 
+* Don't just give anwers; have conversations. 
+    * Give context to your answers - why do you think X and not Y? How did you arrive at your opinion?
+    * Wrong answers are okay if you frame your opinion
+    * Not knowing an answer is fine if you can take an educated guess or talk though it. It looks really bad to simply say you don't know and make no attempt to figure it out.
+        * "I don't know X, but it works like this with Y so maybe XYZ" or "I don't know off the top of my head but I can research that after and get back to you"
+    * It's okay to not know something. It's 2020 - we have Google. If you don't know how to invert a binary tree, as someone who isn't a software engineer, who cares!? [You can google it.](https://twitter.com/mxcl/status/608682016205344768?lang=en)
+    
 
 ## Where do you get your news/info from?
 
-In my opinion, these are good places to get news. It's very important to keep up with all kinds of news - attacks, bugs, new tools, etc
+In my opinion, these are some good places to get news. It's very important to keep up with all kinds of news - attacks, bugs, new tools, etc. 
 
 * Twitter
 * https://reddit.com/r/netsec
@@ -37,11 +44,9 @@ In my opinion, these are good places to get news. It's very important to keep up
 * Schneier
 * Threatpost
 * Troy Hunt
-* Infosec slacks
+* Slacks (Hangops, other private ones)
 
-All of these will source things from each other.
-
-You can also set up a free Feedly feed with a bunch of resources from the above to get a single dashboard of info.
+You can also set up Feedly with a bunch of resources from the above, and others, to get a single dashboard of info.
 
 ## Who do you follow in the industry?
 
@@ -51,5 +56,5 @@ Related to the above, it's important to follow important people/groups in the in
 
 This question is only helpful to start a conversation and judge your familiarity with the entire space, not the tools themselves. Can you name 5 security tools right now? What are they for and why would you use one over the other?
 
-Don't say Kali.
+Don't say Kali. 
 
