@@ -24,5 +24,5 @@ jobs:
     - name: check_links
       uses: docker://dkhamsing/awesome_bot:latest
       with:
-        args: --allow 429 --allow-timeout -t 10 --skip-save-results --allow-dupe --allow-redirect $(find . -name "*.md")
+        args: --allow 429 --allow-timeout -t 10 --skip-save-results --allow-dupe --allow-redirect README.md
     
