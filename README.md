@@ -18,16 +18,15 @@ This is not comprehensive so feel free to contribute.
 ## Features
 These are WIP. Some are not up yet, but I will add them soon
 
-** GH Actions for style guide, spell check, etc
+* PR and Issue Templates 
+* Link checks via awesome_bot
 
-** PR and Issue Templates 
+TODO: GH Actions for style guide, spell check, etc
 
 
 ## Contributing
 
 [How To Contribute](CONTRIBUTING.md)
-
-
 
 ## TOC
 
