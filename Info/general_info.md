@@ -28,7 +28,28 @@ These are generally geared towards remote interviews.
 
 ## Where do you get your news/info from?
 
+In my opinion, these are good places to get news. It's very important to keep up with all kinds of news - attacks, bugs, new tools, etc
 
 * Twitter
-* r/netsec
+* https://reddit.com/r/netsec
+* https://www.theregister.co.uk/
+* Krebs
+* Schneier
+* Threatpost
+* Troy Hunt
 * Infosec slacks
+
+All of these will source things from each other.
+
+You can also set up a free Feedly feed with a bunch of resources from the above to get a single dashboard of info.
+
+## Who do you follow in the industry?
+
+Related to the above, it's important to follow important people/groups in the industry outside of looking at news. This mostly applies to twitter.
+
+## What are your favorite tools?
+
+This question is only helpful to start a conversation and judge your familiarity with the entire space, not the tools themselves. Can you name 5 security tools right now? What are they for and why would you use one over the other?
+
+Don't say Kali.
+
