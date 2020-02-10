@@ -37,6 +37,16 @@ Basics of the OSI layers with examples
 
 [OSI](Info/OSI.md)
 
+### OS
+Operating system facts and basics
+
+[OS](Info/OS.md)
+
+### Containers
+Containers facts and basics
+
+[Containers](Info/Containers.md)
+
 ### Shell
 Bash, shell scripting, simple shell tools
 
