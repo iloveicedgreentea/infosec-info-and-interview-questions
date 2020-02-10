@@ -2,83 +2,80 @@
 
 ## About
 
-this is a splelling error
-
 This is a collection of Infosec questions and information that helped me. This can also be used to refresh your knowledge or learn new concepts at your current position.
 
 Why make this?
 
-* I had some notes, might as well help out the community the way they helped me
+* I had a lot of notes - might as well help out the community the way they helped me
 * There is A LOT of info in infosec. It is hard to get started in the field without a guide
 
 **WIP - I have >10 pages of notes and I am currently transcribing it into markdown. Please bear with me.**
 
-This is not comprehensive so feel free to contribute.
+This is not yet comprehensive so feel free to contribute anything related to infosec. This includes good devops practices such as securing IAM, CD pipelines, etc. Good devops *is* security. 
 
 ## Features
-These are WIP. Some are not up yet, but I will add them soon
+These are WIP. Some are not up yet, but I will add them Soon®
 
 * PR and Issue Templates 
 * Link checks via awesome_bot
 
-TODO: GH Actions for style guide, spell check, etc
-
+TODO: GH Actions for style guide, spell check
 
 ## Contributing
 
 [How To Contribute](CONTRIBUTING.md)
 
-## TOC
+## Table Of Contents
 
 ### General Information
 Interview tips, news sources, how to get info, general concepts, etc. Any misc info goes here.
 
 [General Info](Info/general_info.md)
 
-### Compliance
-PCI-DSS, HIPAA, SOX, etc. Anything GRC related goes here.
+### OSI
+Basics of the OSI layers with examples
 
-[Compliance](Info/compliance.md)
+[OSI](Info/OSI.md)
 
 ### Shell
 Bash, shell scripting, simple shell tools
 
 [Shell](Info/Shell.md)
 
-### SIEMs
-All SIEM related content - Splunk, ES
+### Networking
+Networking basics, ports, network security, http, and anything else relating to networks
 
-[SIEMs](Info/siem.md)
+[Networking](Info/Networking.md)
 
 ### IAM
 IAM and related concepts - SSO
 
 [IAM](Info/iam.md)
 
-### OSI
-Basics of the OSI layers with examples
+### Compliance
+PCI-DSS, HIPAA, SOX, etc. Anything GRC related goes here.
 
-[OSI](Info/OSI.md)
+[Compliance](Info/compliance.md)
 
-### Networking
-Networking basics, ports, network security, http, and anything else relating to networks
+### SIEMs
+All SIEM related content - Splunk, ES
 
-[Networking](Info/Networking.md)
+[SIEMs](Info/siem.md)
 
 ### Cryptography
 AES, SHA, ECDHE, Cryptanalysis, TLS, HTTP, all the acronyms you need to know
 
 [Cryptography](Info/Cryptography.md)
 
-### Attacks
-Buffer Overflows, MITM, the basics of attacks you should know
+### Generic Attacks
+Buffer Overflows, MITM, the basics of attacks you should know. Anything specific will be in another section e.g AD attacks will be in the Active Directory page.
 
 [Attacks](Info/Attacks.md)
 
 ### Active Directory
 AD basics, red team concepts for AD
 
-[Active Directory](Info/Active_directory_.md)
+[Active Directory](Info/Active_directory.md)
 
 ## License
 
