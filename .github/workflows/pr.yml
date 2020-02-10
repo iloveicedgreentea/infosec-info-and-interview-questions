@@ -9,13 +9,13 @@ on:
       - master
 
 jobs:
-  spellcheck:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2.0.0
-    - name: Spellcheck Action
-      uses: rojopolis/spellcheck-github-actions@0.2.0
+#   spellcheck:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2.0.0
+#     - name: Spellcheck Action
+#       uses: rojopolis/spellcheck-github-actions@0.2.0
   check_links:
     runs-on: ubuntu-latest
     steps:
