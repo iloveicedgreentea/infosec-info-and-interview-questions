@@ -81,3 +81,4 @@ This question is only helpful to start a conversation and judge your familiarity
 
 Don't say Kali. 
 
+Wireshark, Metasploit, Hashcat, nmap, among others

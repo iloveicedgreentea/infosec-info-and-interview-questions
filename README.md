@@ -36,6 +36,11 @@ Interview tips, news sources, how to get info, general concepts, etc. Any misc i
 
 [General Info](Info/general_info.md)
 
+### Cloud Security
+Cloud security
+
+[Cloud Security](Info/cloud.md)
+
 ### OSI
 Basics of the OSI layers with examples
 

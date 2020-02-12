@@ -26,11 +26,15 @@ If a user clicks this link, their browser will trust it as it is coming from a "
 ## CSRF
 CSRF is an attack that tricks a victim into performing an action without their input. An example is using some trick to run a request on a page they visit, usually under your control, which sends a request to their bank. Their cookie will be sent and then you can steal their money. This all happens under the hood.
 
-### Protections
+### Mitigations
 * Idempotent and read-only GET requests: GET should only read data, not write it or cause changes
 * Anti-forgery tokens - You can insert hidden fields with a random token that your API will look for. Third party sites will not have this, so you can detect the false request
 * Force login validation - ever notice that sometimes GH or Amazon will make you put your password in for certain actions? Part of the motivation behind that is stopping CSRF.
 
+### SQL Injection
+wip
+### Mitigations
+wip
 
 
 ## Buffer Overflows
@@ -46,4 +50,7 @@ An exploit where improper code, almost always C or C++, does not perform bounds 
 ### Replay Attack
 https://en.wikipedia.org/wiki/Replay_attack
 
-In a MITM, you can take some communication and send it again. This can cause fake authentication to get accepted if an attacker can replay some part of the session containing a password. This is mitigated with a session token and a sequence number.
+In a MITM, you can take some communication and send it again. This can cause fake authentication to get accepted if an attacker can replay some part of the session containing a password. 
+
+### Mitigations
+Create a random session token and a sequence number, send those with the MAC
