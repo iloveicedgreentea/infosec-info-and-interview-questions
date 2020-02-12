@@ -40,6 +40,8 @@ If a user clicks this link, their browser will trust it as it is coming from a "
 * Use content security policies to block inline and external scripts from domains not whitelisted
 
 ## CSRF
+* Client-side request forgery
+
 CSRF is an attack that tricks a victim into performing an action without their input. An example is using some trick to run a request on a page they visit, usually under your control, which sends a request to their bank. Their cookie will be sent and then you can steal their money. This all happens under the hood.
 
 ### Mitigations
@@ -47,7 +49,25 @@ CSRF is an attack that tricks a victim into performing an action without their i
 * Anti-forgery tokens - You can insert hidden fields with a random token that your API will look for. Third party sites will not have this, so you can detect the false request
 * Force login validation - ever notice that sometimes GH or Amazon will make you put your password in for certain actions? Part of the motivation behind that is stopping CSRF.
 
-### SQL Injection
+## SSRF
+* Server-side request forgery
+
+SSRF is an attack that tricks a server into making a request on the attacker's behalf. This can allow you to access internal services, such as AWS metadata, externally. SSRF isn't just limited to HTTP requests. A common example is a web app that accepts a URL parameter - `https://example.com/service?url=http://localhost:8080/secretdata`
+
+Depending on the app, you can make protocol requests to anything, like redis. For a good example, read about [the Capital One breach](https://blog.appsecco.com/an-ssrf-privileged-aws-keys-and-the-capital-one-breach-4c3c2cded3af).
+
+[Here are some ways to bypass SSRF protections](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery)
+
+### Mitigations
+
+* Most cloud providers, finally including AWS, have an authorization scheme for metadata. AWS metadata V2 requires extra work to enable.
+
+* Automated and manual validation of code - Check for bugs in validation or whitelists
+
+* If you must allow URL parameters, whitelist domains/IPs and/or escape input and validate at the endpoint.
+
+
+## SQL Injection
 Web apps written in a variety of languages, usually PHP, sometimes pass input into SQL queries. You can just comment out the rest of the query and put your own data in.
 
 Some examples:
@@ -69,7 +89,7 @@ An exploit where improper code, almost always C or C++, does not perform bounds 
 * DEP - Stop execution of specific memory sectors
 * Stack canaries/cookies - Place the canary before stack return pointer. The RP would get overwritten with an overflow, so the next function can look for this value. If not present, we know a buffer overflow was attempted and we can crash. 
 
-### Replay Attack
+## Replay Attack
 https://en.wikipedia.org/wiki/Replay_attack
 
 In a MITM, you can take some communication and send it again. This can cause fake authentication to get accepted if an attacker can replay some part of the session containing a password. 
