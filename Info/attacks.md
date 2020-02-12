@@ -1,5 +1,21 @@
 # Attacks
 
+## Credential Stuffing
+This is fundamentally tied to password reuse. An attacker can automate login forms using known password/email combos. It is not brute-forcing the passwords per se, just trying previously cracked/stolen combinations. 
+
+### Mitigations
+
+* MFA - Enforce real (non-sms) multi-factor authentication on all login attempts that do not have a cookie present. SMS is not real MFA. 
+
+* Account lockouts - good in general but won't really help unless they try multiple passwords for one user. Still, you should have them regardless.
+
+* Checking password hashes on creation - You can use the [haveibeenpwned api](https://haveibeenpwned.com/API/v2) to look up partial hashes without exposing the entire hash. This will prevent reuse of a breached password.
+
+* Enforce good passwords - most breached passwords are not very secure.
+
+* Password Managers - Educate clients and people about password managers. All passwords should be unique, long, and random.
+
+
 ## XSS
 Cross-Site Scripting - a malicious script can be injected such that it runs in your browser.
 
