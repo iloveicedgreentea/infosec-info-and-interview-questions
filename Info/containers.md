@@ -3,16 +3,16 @@
 ## General
 
 ### Multi-stage builds
-Use one stage to build, another stage to run. For example (pseudocode):
+Use one stage to build, another stage to run. For example:
 
 ```
-FROM: go as builder
+FROM go:latest as builder
+COPY . .
 RUN make
 
-FROM: scratch
-RUN mkdir /app
-COPY --from=builder /app /app
-CMD ["/app/main"]
+FROM scratch
+COPY --from=builder /app .
+CMD ["main"]
 ```
 
 ## Hardening
@@ -31,7 +31,7 @@ Create a app directory and chown it, and copy your files there (COPY --chown xyz
 ### Run scratch if its a binary
 If you compile a static binary, you don't need a full image. Combined with a multistage build, you can run the binary alone in a scratch image
 
-`FROM: scratch`
+`FROM scratch`
 
 You can also use [distroless](https://github.com/GoogleContainerTools/distroless) if your app needs some other libraries.
 

@@ -32,9 +32,15 @@ CSRF is an attack that tricks a victim into performing an action without their i
 * Force login validation - ever notice that sometimes GH or Amazon will make you put your password in for certain actions? Part of the motivation behind that is stopping CSRF.
 
 ### SQL Injection
-wip
+Web apps written in a variety of languages, usually PHP, sometimes pass input into SQL queries. You can just comment out the rest of the query and put your own data in.
+
+Some examples:
+
+* `name’ OR ‘a’=’a` - this will nullify a `WHERE` statement
+* `name’); DELETE FROM items; –` - This will create another statement to delete data and comment out the rest of the query
+
 ### Mitigations
-wip
+Mitigation is very simple. Almost all languages that deal with databases have some form of `prepared statements`. This will turn SQL input into literal strings. You can also use stored procedures and parameterize them, however the downside is those are stored in the DB and not in the application code.
 
 
 ## Buffer Overflows
