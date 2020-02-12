@@ -17,7 +17,9 @@ This is fundamentally tied to password reuse. An attacker can automate login for
 
 
 ## XSS
-Cross-Site Scripting - a malicious script can be injected such that it runs in your browser.
+* Cross-Site Scripting
+
+XSS is an attack where a script or similar information can be injected such that it runs in your browser.
 
 
 ### Static/Stored
@@ -38,6 +40,7 @@ If a user clicks this link, their browser will trust it as it is coming from a "
 * URL safe encode all special characters
 * JS/HTML escape data
 * Use content security policies to block inline and external scripts from domains not whitelisted
+* Phishing training and protections
 
 ## CSRF
 * Client-side request forgery
