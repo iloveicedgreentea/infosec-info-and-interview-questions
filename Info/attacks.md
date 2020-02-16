@@ -15,12 +15,10 @@ This is fundamentally tied to password reuse. An attacker can automate login for
 
 * Password Managers - Educate clients and people about password managers. All passwords should be unique, long, and random.
 
-
 ## XSS
 * Cross-Site Scripting
 
 XSS is an attack where a script or similar information can be injected such that it runs in your browser.
-
 
 ### Static/Stored
 An attacker can inject some JS into a comment which gets stored in the database. Subsequent visits to the form/page will result in code execution.
@@ -84,7 +82,6 @@ Mitigation is very simple. Almost all languages that deal with databases have so
 
 ## Buffer Overflows
 An exploit where improper code, almost always C or C++, does not perform bounds checks on assigned buffers. An attacker can leverage this to write the memory regions beyond this bound and potentially, control code execution. They can insert other code to run and thus get full control of your system if it is over-privileged. Back to defense in depth, you can lower your exposure by restricting privileges like not running apps as root.
-
 
 ### Mitigations
 * Memory spacing - put space between memory addresses so the overflow won't overwrite important stuff

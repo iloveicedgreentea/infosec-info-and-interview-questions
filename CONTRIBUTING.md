@@ -4,6 +4,18 @@ This was made to contribute to the infosec community. Thank you in advance for c
 
 ## Guidelines
 
+### Workflow
+I recommend using VS Code because in general, it's just the best editor, but also has really nice support for markdown. 
+
+1) All pages should use the appropriate headings. This will allow linking to specific topics.
+
+* `##` for main points
+* `###` for topics under the main points
+* `*` for bullet points under `###` headings
+
+2) Check and render your markdown before committing. 
+* `Shift + Cmd + V` in VS Code
+
 ### General
 
 1) If this helped you, please feel free to share this (but please [read the license first](LICENSE.md)). This is itself a contribution.
