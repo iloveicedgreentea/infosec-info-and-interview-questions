@@ -15,7 +15,6 @@ Don't put `s3:*` in your policies. Restrict access to buckets by creating polici
 AWS has a new feature to block all public access as well as ACLs. Turn that on
 
 ### Monitoring
-Set up AWS Config to check your policies are in place and alert on them.
-
-Set up server access logging and CloudTrail to log S3 events to important buckets.
+* Set up AWS Config to check your policies are in place and alert on them.
+* Set up server access logging and CloudTrail to log S3 events to important buckets.
 
