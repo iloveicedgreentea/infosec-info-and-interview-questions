@@ -6,18 +6,15 @@ This is a collection of Infosec questions and information that helped me. This c
 
 Why make this?
 
-* I had a lot of notes - might as well help out the community the way they helped me
-* There is A LOT of info in infosec. It is hard to get started in the field without a guide
-
-**WIP - I have >10 pages of notes and I am currently transcribing it into markdown. Please bear with me.**
+* I had a lot of notes and this helped me organize them - might as well give back to the community 
+* This may help someone prepare for an interview or refresh their knowledge
 
 This is available in web form here for now. I will make this a dedicated site later on.
 https://iloveicedgreentea.github.io/infosec-info-and-interview-questions/
 
-This is not yet comprehensive so feel free to contribute anything related to infosec. This includes good devops practices such as securing IAM, CD pipelines, etc. Good devops *is* security. 
+This is meant to be comprehensive so feel free to contribute anything related to infosec. This includes good devops practices such as securing IAM, CD pipelines, etc. Good devops *is* security. 
 
 ## Features
-These are WIP. Some are not up yet, but I will add them Soon®
 
 * PR and Issue Templates 
 * Link checks via awesome_bot
