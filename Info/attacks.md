@@ -37,7 +37,7 @@ If a user clicks this link, their browser will trust it as it is coming from a "
 * Sanitize input. All major frameworks have a library or function to do this
 * URL safe encode all special characters
 * JS/HTML escape data
-* Use content security policies to block inline and external scripts from domains not whitelisted
+* Use a `content security policy` (CSP) to block inline and external scripts from domains not whitelisted
 * Phishing training and protections
 
 ## CSRF
